@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-200">
+    <header class="" style="padding-top: 10px; padding-bottom: 10px">
+      <nav
+        class="rounded-xl flex justify-between items-center h-16 bg-white"
+        style="max-width: 1425px; margin: auto"
+      >
+        <div
+          class="flex justify-around items-center"
+          id="logo"
+          style="margin-left: 10px"
+        >
+          <img width="28" src="assets/logo.png" alt="" />
+          <p>Dev <span class="font-bold">Board</span></p>
+        </div>
+        <div
+          class="flex justify-around items-center"
+          id="rignt-nav"
+          style="width: 120px"
+        >
+          <div id="check-box" class="w-14">
+            <div
+              class="flex bg-slate-200 rounded-xl justify-between items-center"
+              style="padding: 5px"
+            >
+              <input type="checkbox" style="margin-left: 6px" />
+              <p id="twenty-three"><span class="font-bold">23</span></p>
+            </div>
+          </div>
+          <div id="random-color">
+            <img width="30" src="assets/theme-btn.png" alt="" />
+          </div>
+        </div>
+      </nav>
+
+      <main id="main" class="flex justify-center gap-3">
+        <div class="main-box">
+          <div
+            class="box h-40 flex justify-center gap-2 items-center rounded-lg"
+            style="background-color: white; margin-top: 20px"
+          >
+            <div
+              class="box1 bg-[#F4F7FF] w-85 h-30 rounded-xl flex justify-center items-center"
+            >
+              <div class="task-assaign flex justify-center items-center gap-3">
+                <div
+                  class="bg-white"
+                  style="padding: 10px 15px; border-radius: 50%"
+                >
+                  <input type="checkbox" />
+                </div>
+                <div>
+                  <p>Task Assaign</p>
+                  <h2>
+                    <span id="six" class="font-bold text-3xl">6</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box2 w-120 h-30 rounded-xl flex justify-evenly items-center"
+            >
+              <div>
+                <img src="assets/board.png" alt="" />
+              </div>
+              <p class="text-white">Discover Something New Today!</p>
+            </div>
+            <div
+              class="box3 bg-[#F4F7FF] w-85 h-30 rounded-xl flex justify-center gap-5 items-center"
+            >
+              <div
+                class="bg-white"
+                style="padding: 10px 10px; border-radius: 50px"
+              >
+                <img src="assets/calender.png" alt="" />
+              </div>
+              <div id="date-display">Tue feb 25 2025</div>
+            </div>
+          </div>
+
+          <div
+            class="box grid grid-cols-3 gap-3"
+            style="margin-top: -8px; background-color: white; padding: 10px"
+          >
+            <div
+              class="box4 bg-[#F4F7FF] w-96 h-64 rounded-xl"
+              style="padding: 7px 12px"
+            >
+              <button
+                class="btn bg-white"
+                style="padding: 0px 15px; border: none"
+              >
+                ShopEase
+              </button>
+              <h3
+                id="fix-mobile"
+                style="margin-top: 10px"
+                class="text-2xl font-semibold"
+              >
+                Fix Mobile Button Issue
+              </h3>
+              <div
+                class="bg-white h-20"
+                style="
+                  padding: 5px;
+                  padding-top: 10px;
+                  border-radius: 10px;
+                  margin-top: 13px;
+                "
+              >
+                Debug using Chrome DevTools, check for overlapping ...
+              </div>
+              <div
+                class="flex justify-between items-center h-16"
+                style="margin-top: 8px"
+              >
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button
+                    id="btn1"
+                    class="btn bg-[#3752FD] text-white"
+                    style="padding: 0px 15px; border: none"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box4 bg-[#F4F7FF] w-96 h-64 rounded-xl"
+              style="padding: 7px 12px"
+            >
+              <button
+                class="btn bg-white"
+                style="padding: 0px 15px; border: none"
+              >
+                CloudSync
+              </button>
+              <h3
+                id="dark-mode"
+                style="margin-top: 10px"
+                class="text-2xl font-semibold"
+              >
+                Add Dark Mode
+              </h3>
+              <div
+                class="bg-white h-20"
+                style="
+                  padding: 5px;
+                  padding-top: 10px;
+                  border-radius: 10px;
+                  margin-top: 13px;
+                "
+              >
+                Store the user's preference in localStorage, update CSS varia...
+              </div>
+              <div
+                class="flex justify-between items-center h-16"
+                style="margin-top: 8px"
+              >
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button
+                    class="btn bg-[#3752FD] text-white"
+                    style="padding: 0px 15px; border: none"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box4 bg-[#F4F7FF] w-96 h-64 rounded-xl"
+              style="padding: 7px 12px"
+            >
+              <button
+                class="btn bg-white"
+                style="padding: 0px 15px; border: none"
+              >
+                SwiftPay
+              </button>
+              <h3
+                id="optimize-home"
+                style="margin-top: 10px"
+                class="text-2xl font-semibold"
+              >
+                Optimize Home page 
+              </h3>
+              <div
+                class="bg-white h-20"
+                style="
+                  padding: 5px;
+                  padding-top: 10px;
+                  border-radius: 10px;
+                  margin-top: 13px;
+                "
+              >
+                Debug using Chrome DevTools, check for overlappin...
+              </div>
+              <div
+                class="flex justify-between items-center h-16"
+                style="margin-top: 8px"
+              >
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button
+                    class="btn bg-[#3752FD] text-white"
+                    style="padding: 0px 15px; border: none"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box4 bg-[#F4F7FF] w-96 h-64 rounded-xl"
+              style="padding: 7px 12px"
+            >
+              <button
+                class="btn bg-white"
+                style="padding: 0px 15px; border: none"
+              >
+                Meta
+              </button>
+              <h3
+                id="add-new-emoji"
+                style="margin-top: 10px"
+                class="text-2xl font-semibold"
+              >
+                Add new emoji 🤲
+              </h3>
+              <div
+                class="bg-white h-20"
+                style="
+                  padding: 5px;
+                  padding-top: 10px;
+                  border-radius: 10px;
+                  margin-top: 13px;
+                "
+              >
+                Debug using Chrome DevTools, check for overlappin...
+              </div>
+              <div
+                class="flex justify-between items-center h-16"
+                style="margin-top: 8px"
+              >
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button
+                    class="btn bg-[#3752FD] text-white"
+                    style="padding: 0px 15px; border: none"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box4 bg-[#F4F7FF] w-96 h-64 rounded-xl"
+              style="padding: 7px 12px"
+            >
+              <button
+                class="btn bg-white"
+                style="padding: 0px 15px; border: none"
+              >
+                Google LLC
+              </button>
+              <h3
+                id="ntegrate-api"
+                style="margin-top: 10px"
+                class="text-2xl font-semibold"
+              >
+                Integrate OpenAI API
+              </h3>
+              <div
+                class="bg-white h-20"
+                style="
+                  padding: 5px;
+                  padding-top: 10px;
+                  border-radius: 10px;
+                  margin-top: 13px;
+                "
+              >
+                Debug using Chrome DevTools, check for overlappin...
+              </div>
+              <div
+                class="flex justify-between items-center h-16"
+                style="margin-top: 8px"
+              >
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button
+                    class="btn bg-[#3752FD] text-white"
+                    style="padding: 0px 15px; border: none"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box4 bg-[#F4F7FF] w-96 h-64 rounded-xl"
+              style="padding: 7px 12px"
+            >
+              <button
+                class="btn bg-white"
+                style="padding: 0px 15px; border: none"
+              >
+                Glassdoar
+              </button>
+              <h3
+                id="improve-job"
+                style="margin-top: 10px"
+                class="text-2xl font-semibold"
+              >
+                Improve Job searching
+              </h3>
+              <div
+                class="bg-white h-20"
+                style="
+                  padding: 5px;
+                  padding-top: 10px;
+                  border-radius: 10px;
+                  margin-top: 13px;
+                "
+              >
+                Debug using Chrome DevTools, check for overlappin...
+              </div>
+              <div
+                class="flex justify-between items-center h-16"
+                style="margin-top: 8px"
+              >
+                <div>
+                  <p>Deadline</p>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button
+                    class="btn bg-[#3752FD] text-white"
+                    style="padding: 0px 15px; border: none"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white w-60 rounded-xl"
+          style="margin-top: 20px; text-align: center"
+        >
+          <div>Activity Log</div>
+          <button
+            id="btn2"
+            class="btn2 bg-[#3752FD] text-white rounded-md"
+            style="padding: 10px 15px"
+          >
+            Clear History
+          </button>
+          <div id="newElement"></div>
+        </div>
+      </main>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>

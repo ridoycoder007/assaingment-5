@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    
+}
+.box2{
+background: linear-gradient(to left, #9BA8F8, #6C7FFA, #3752FD)
+}
