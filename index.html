@@ -16,7 +16,7 @@
     <header class="" style="padding-top: 10px; padding-bottom: 10px">
       <nav
         class="rounded-xl flex justify-between items-center h-16 bg-white"
-        style="max-width: 1425px; margin: auto"
+        style="max-width: 1552px; margin: auto"
       >
         <div
           class="flex justify-around items-center"
@@ -24,7 +24,7 @@
           style="margin-left: 10px"
         >
           <img width="28" src="assets/logo.png" alt="" />
-          <p>Dev <span class="font-bold">Board</span></p>
+          <p style="margin-left: 5px;">Dev <span class="font-bold">Board</span></p>
         </div>
         <div
           class="flex justify-around items-center"
@@ -71,6 +71,7 @@
               </div>
             </div>
             <div
+            id="box2"
               class="box2 w-120 h-30 rounded-xl flex justify-evenly items-center"
             >
               <div>
@@ -89,7 +90,10 @@
               </div>
               <div id="date-display">Tue feb 25 2025</div>
             </div>
+            
           </div>
+
+          
 
           <div
             class="box grid grid-cols-3 gap-3"
@@ -364,6 +368,7 @@
                 </div>
                 <div>
                   <button
+                  id="btn0"
                     class="btn bg-[#3752FD] text-white"
                     style="padding: 0px 15px; border: none"
                   >
@@ -377,9 +382,15 @@
 
         <div
           class="bg-white w-60 rounded-xl"
-          style="margin-top: 20px; text-align: center"
+          style="margin-top: 20px; text-align: center; width: 350px;"
         >
-          <div>Activity Log</div>
+          <div class="flex justify-center items-center gap-2" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+              <img width="20" src="assets/activity.png" alt="">
+            </div>
+            <div>Activity Log</div>
+            
+          </div>
           <button
             id="btn2"
             class="btn2 bg-[#3752FD] text-white rounded-md"
@@ -387,6 +398,7 @@
           >
             Clear History
           </button>
+          <div style="border-bottom: 1px dashed #b8b8b8; margin-top: 10px;"></div>
           <div id="newElement"></div>
         </div>
       </main>

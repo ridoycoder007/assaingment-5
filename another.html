@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/daisyui@5"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      </head>
+<body>
+    <nav
+        class="rounded-xl flex justify-between items-center h-16 bg-white"
+        style="max-width: 1700px; margin: auto;background-color: aliceblue;"
+      >
+        <div
+          class="flex justify-around items-center"
+          id="logo"
+          style="margin-left: 10px"
+        >
+          <img width="28" src="assets/logo.png" alt="" />
+          <p style="margin-left: 5px;">Dev <span class="font-bold">Board</span></p>
+        </div>
+        <div>
+          <button id="desk" class="btn bg-[#3752FD]" style="padding: 0 15px; color: white; margin-right: 10px;">Back to Desk</button>
+        </div>
+      </nav>
+
+
+      <main>
+        <h1 class="font-bold text-2xl text-center" style="margin-top: 15px;">Blogs</h1>
+        <div class="max-width: 1552px; margin: auto;background-color: aliceblue;">
+          <div class="bg-slate-100">
+            <h1 class="text-2xl" style="margin-top: 15px; border-bottom: 1px solid #aaaaaa; padding: 15px;">Question-1: What are the different ways to select an element in the DOM?</h1>
+
+            <h1 class="text-xl font-semibold" style="padding-left: 20px; margin-top:5px;">There are some selectors given to below:</h1>
+            <ol style="padding-left:20px; padding-top: 5px; padding-bottom: 10px;">
+              <li>getElementById() : That can select html element by id name.</li>
+              <li>getElementsByClassName() : That can select html element by class name.</li>
+              <li>getElementsByTagName() : That can select html element by tag name.</li>
+              <li>querySelector() : QuerySelector select first element that mached css selector.</li>
+              <li>querySelectorAll() : QuerySelectorAll that can select all element that match a css selector. </li>
+              <li>childNodes : Selects all child nodes of a given element.</li>
+              <li>firstChild / lastChild : select firstChild and lastChild of parent element</li>
+              <li>parentNode : Selects the parent node of a given element.</li>
+              <li>closest() : Selects the nearest ancestor of an element that matches the provided selector.</li>
+            </ol>
+          </div>
+          <div class="bg-slate-100">
+            <h1 class="text-2xl" style="margin-top: 15px; border-bottom: 1px solid #aaaaaa; padding: 15px;">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <div style="padding-left: 15px; padding-bottom: 10px;">
+              <h1 class="text-xl font-semibold" style="margin-top:5px;">Different between innerHTML, innerText, and textContent given to show:</h1>
+              <h1>innerHTML : It returns or sets the HTML content of an element (including tags).</h1>
+              <h1>innerText : That can returns of innerText value.</h1>
+              <h1>textContent : It returns or sets the text content of an element, including text from all child nodes, without rendering HTML tags.</h1>
+            </div>
+            
+          </div>
+          </div>
+          <div class="bg-slate-100">
+          
+            <h1 class="text-2xl" style="margin-top: 15px; border-bottom: 1px solid #aaaaaa; padding: 15px;">Question-3: What is event delegation in the DOM?</h1>
+             <div style="padding-left: 15px; padding-bottom: 10px;">
+              <div class="text-xl font-semibold" style="margin-top:5px;">Event delegation in the DOM:</div>
+              <div>
+                Event delegation is a technique in JavaScript where a single event listener is attached to a parent element to handle events on its child elements through event bubbling.
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="bg-slate-100">
+            <h1 class="text-2xl" style="margin-top: 15px; border-bottom: 1px solid #aaaaaa; padding: 15px;">Question-4: What is event bubbling in the DOM?</h1>
+            <div style="padding-left: 15px; padding-bottom: 10px;">
+              <div class="text-xl font-semibold" style="margin-top:5px;">What is event bubbling in the DOM?</div>
+              <div>
+                Event bubbling is a mechanism in the DOM where an event, such as a click, starts from the target element and "bubbles up" to its parent elements, allowing the parent elements to also respond to the event.
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="bg-slate-100">
+            <h1 class="text-2xl" style="margin-top: 15px; border-bottom: 1px solid #aaaaaa; padding: 15px;">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <div style="padding-left: 15px; padding-bottom: 10px;">
+              <div class="text-xl font-semibold" style="margin-top:5px;">Given to bellow:</div>
+              <div>
+                let newElement = document.createElement('div'); 
+                let parent = document.getElementById('parent-element');
+parent.appendChild(newElement); <br>
+<br>
+
+
+newElement.innerHTML = 'This is a new element';  // adds text inside the element
+newElement.setAttribute('id', 'newDiv'); <br><br>
+
+let elementToRemove = document.getElementById('element-to-remove');
+elementToRemove.parentNode.removeChild(elementToRemove); 
+              </div>
+            </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </main>
+
+    
+    <script>
+      document.getElementById('desk').addEventListener('click', function() {
+  window.location.href = "index.html"; 
+});
+
+    </script>
+
+    
+</body>
+</html>
